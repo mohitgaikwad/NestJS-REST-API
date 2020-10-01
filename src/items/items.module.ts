@@ -5,7 +5,7 @@ import { ItemsService } from './items.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
-    imports: [TypeOrmModule.forRoot([Item])],
+    imports: [TypeOrmModule.forFeature([Item])],
     controllers: [ItemsController],
     providers: [ItemsService],
 })

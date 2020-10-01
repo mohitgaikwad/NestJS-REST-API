@@ -3,6 +3,9 @@ import { CreateItemDto } from './dto/item.dto';
 // import { Request, Response } from 'express';
 import { Item } from './entity/item.entity';
 import { ItemsService } from './items.service';
+import { DeleteResult } from 'typeorm';
+import { CreateItemDto, UpdateItemDto } from './dto/item.dto';
+import { ItemFile } from './item/item.file';
 
 @Controller('items')
 export class ItemsController {
